@@ -19,13 +19,12 @@ server.get('/', (req, res) => {
 
 server.post('/new_pet', (req, res) => {
     const pet = new Pet(req.body);
-    console.log(pet);
-    pet.save((err) => {
+    pet.save((err, savedPet) => {
         if (err) {
             res.status(500);
             res.json(err);
         }
-        res.json(pet);
+        res.json(savedPet);
     });
 });
 
