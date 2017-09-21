@@ -1,0 +1,25 @@
+{
+  "name": "ls-server-testing",
+  "version": "1.0.0",
+  "description": "Topics:\r   * API Specification Design\r   * Test Driven Development\r   * Async Testing with Mocha",
+  "main": "src/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egrodo/LS-Server-Testing.git"
+  },
+  "author": "egrodo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Egrodo/LS-Server-Testing/issues"
+  },
+  "homepage": "https://github.com/Egrodo/LS-Server-Testing#readme",
+  "dependencies": {
+    "mocha": "^3.5.3"
+  }
+}
